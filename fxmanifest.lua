@@ -2,7 +2,7 @@ fx_version 'cerulean'
 game 'gta5'
 
 name 'beezy-boombox'
-author 'Beezy'
+author 'BeezyDevs'
 description 'Working baseline boombox'
 
 ui_page 'html/index.html'
@@ -24,3 +24,4 @@ client_scripts {
 server_scripts {
     'server.lua'
 }
+
