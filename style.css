@@ -1,0 +1,11 @@
+['beezy_boombox'] = {
+    name = 'beezy_boombox',
+    label = 'Beezy Boombox',
+    weight = 500,
+    type = 'item',
+    image = 'beezy_boombox.png',
+    unique = false,
+    useable = true,
+    shouldClose = true,
+    description = 'Portable music player'
+},
