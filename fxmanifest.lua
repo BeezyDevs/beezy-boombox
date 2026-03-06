@@ -1,34 +1,26 @@
-let player = null;
-let currentVolume = 50;
+fx_version 'cerulean'
+game 'gta5'
 
-window.addEventListener("message", function(e) {
-    const data = e.data;
+name 'beezy-boombox'
+author 'Beezy'
+description 'Working baseline boombox'
 
-    if (data.action === "open") {
-        document.getElementById("menu").style.display = "block";
-        document.getElementById("volume").value = currentVolume;
-    }
-});
+ui_page 'html/index.html'
 
-function play() {
-    console.log("Play pressed");
+files {
+    'html/index.html',
+    'html/style.css',
+    'html/script.js'
 }
 
-function stop() {
-    console.log("Stop pressed");
+shared_scripts {
+    'config.lua'
 }
 
-function closeMenu() {
-    document.getElementById("menu").style.display = "none";
-    fetch(`https://${GetParentResourceName()}/close`, { method: "POST" });
+client_scripts {
+    'client.lua'
 }
 
-document.getElementById("volume").addEventListener("input", function() {
-    currentVolume = parseInt(this.value);
-});
-
-document.addEventListener("keydown", function(e) {
-    if (e.key === "Escape") {
-        closeMenu();
-    }
-});
+server_scripts {
+    'server.lua'
+}
