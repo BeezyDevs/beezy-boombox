@@ -1,11 +1,45 @@
-['beezy_boombox'] = {
-    name = 'beezy_boombox',
-    label = 'Beezy Boombox',
-    weight = 500,
-    type = 'item',
-    image = 'beezy_boombox.png',
-    unique = false,
-    useable = true,
-    shouldClose = true,
-    description = 'Portable music player'
-},
+body {
+    margin: 0;
+    padding: 0;
+    background: transparent !important;
+    font-family: Arial, sans-serif;
+}
+
+#menu {
+    width: 350px;
+    margin: 150px auto;
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+input[type=text] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: none;
+}
+
+input[type=range] {
+    width: 90%;
+    margin-bottom: 15px;
+}
+
+button {
+    width: 90%;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    background: #4a90e2;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #357ABD;
+}
